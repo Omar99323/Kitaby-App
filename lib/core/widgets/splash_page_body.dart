@@ -11,6 +11,17 @@ class SplashPageBody extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Image.asset(logo),
+        const SizedBox(
+          height: 8,
+        ),
+        const Text(
+          'Read free books',
+          style: TextStyle(
+            fontFamily: 'GT Sectra Fine',
+            fontSize: 20,
+          ),
+          textAlign: TextAlign.center,
+        ),
       ],
     );
   }

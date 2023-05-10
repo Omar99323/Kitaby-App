@@ -19,7 +19,7 @@ class KitabyApp extends StatelessWidget {
     );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: keyColor,
       ),
       home: const SplashPage(),
