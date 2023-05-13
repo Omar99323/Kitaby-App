@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:kitaby/core/constants.dart';
+import 'package:kitaby/features/HomePage/home_page.dart';
+import 'package:kitaby/features/SplashPage/widgets/sliding_text.dart';
 
 class SplashPageBody extends StatefulWidget {
   const SplashPageBody({super.key});
@@ -13,9 +16,7 @@ class _SplashPageBodyState extends State<SplashPageBody>
   late AnimationController animecon;
   late Animation<Offset> anime;
 
-  @override
-  void initState() {
-    super.initState();
+  void animateMethod() {
     animecon = AnimationController(
       vsync: this,
       duration: const Duration(
@@ -31,10 +32,20 @@ class _SplashPageBodyState extends State<SplashPageBody>
     animecon.forward();
   }
 
+  void navigateToHome() {
+    Future.delayed(const Duration(seconds: 2), () {
+      Get.to(
+        () => const HomePage(),
+        transition: Transition.circularReveal,
+      );
+    });
+  }
+
   @override
-  // ignore: unnecessary_overrides
-  void dispose() {
-    super.dispose();
+  void initState() {
+    super.initState();
+    animateMethod();
+    navigateToHome();
   }
 
   @override
@@ -47,24 +58,7 @@ class _SplashPageBodyState extends State<SplashPageBody>
         const SizedBox(
           height: 8,
         ),
-        // WIDGET TO BLUID ONLY ITS CHILD WHEN REBUILD
-        AnimatedBuilder(
-          animation: anime,
-          builder: (BuildContext context, Widget? child) {
-            // WIDGET TO INITIALIZE THE CHILD POSITION
-            return SlideTransition(
-              position: anime,
-              child: const Text(
-                'Read free books',
-                style: TextStyle(
-                  fontFamily: 'GT Sectra Fine',
-                  fontSize: 20,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            );
-          },
-        ),
+        SlidingText(animation: anime),
       ],
     );
   }

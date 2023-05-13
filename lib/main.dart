@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:flutter/services.dart';
 import 'package:kitaby/core/constants.dart';
-import 'package:kitaby/features/pages/splash_page.dart';
+import 'package:kitaby/features/SplashPage/splash_page.dart';
 
 void main() {
   runApp(const KitabyApp());
@@ -17,7 +18,7 @@ class KitabyApp extends StatelessWidget {
         statusBarColor: Colors.transparent,
       ),
     );
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: keyColor,
@@ -25,4 +26,5 @@ class KitabyApp extends StatelessWidget {
       home: const SplashPage(),
     );
   }
+
 }
