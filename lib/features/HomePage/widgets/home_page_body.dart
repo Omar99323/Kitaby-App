@@ -12,15 +12,19 @@ class HomePageBody extends StatelessWidget {
         horizontal: 25,
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           CustomAppBar(),
           TopListView(),
+          Text(
+            'Best Seller',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
-
-
-

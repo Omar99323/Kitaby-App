@@ -8,17 +8,23 @@ class TopListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.3,
-      child: ListView.separated(
-        scrollDirection: Axis.horizontal,
-        itemCount: 5,
-        physics: const BouncingScrollPhysics(),
-        itemBuilder: (context, index) {
-          return const TopListViewItem();
-        },
-        separatorBuilder: (BuildContext context, int index) => SizedBox(
-          width: MediaQuery.of(context).size.width * .04,
+    return Padding(
+      padding: const EdgeInsets.only(
+        top: 30,
+        bottom: 50,
+      ),
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.3,
+        child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemCount: 6,
+          physics: const BouncingScrollPhysics(),
+          itemBuilder: (context, index) {
+            return const TopListViewItem();
+          },
+          separatorBuilder: (BuildContext context, int index) => SizedBox(
+            width: MediaQuery.of(context).size.width * .04,
+          ),
         ),
       ),
     );
