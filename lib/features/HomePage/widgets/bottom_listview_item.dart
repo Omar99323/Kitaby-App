@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/core/constants.dart';
+import 'package:kitaby/core/utils/styls.dart';
 
 class BottomListViewItem extends StatelessWidget {
   const BottomListViewItem({super.key});
@@ -29,9 +30,30 @@ class BottomListViewItem extends StatelessWidget {
           width: MediaQuery.of(context).size.width * 0.08,
         ),
         Column(
-          children: const [
-            Text('sssssssssss'),
-            Text('sssssssssss'),
+          children: [
+            const Text(
+              'sssssssssss',
+              style: Styles.textStyle30,
+            ),
+            const Text(
+              'sssssssssss',
+              style: Styles.textStyle18,
+            ),
+            Row(
+              children: const [
+                Text(
+                  '525',
+                  style: Styles.textStyle14,
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  '40',
+                  style: Styles.textStyle14,
+                ),
+              ],
+            ),
           ],
         ),
       ],
