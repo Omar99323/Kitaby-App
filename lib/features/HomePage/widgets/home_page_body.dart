@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/features/HomePage/widgets/custom_appbar.dart';
 import 'package:kitaby/features/HomePage/widgets/top_listview.dart';
+import 'package:kitaby/features/HomePage/widgets/bottom_listview.dart';
 
 class HomePageBody extends StatelessWidget {
   const HomePageBody({super.key});
@@ -18,11 +19,9 @@ class HomePageBody extends StatelessWidget {
           TopListView(),
           Text(
             'Best Seller',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-            ),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
           ),
+          BottomListView(),
         ],
       ),
     );

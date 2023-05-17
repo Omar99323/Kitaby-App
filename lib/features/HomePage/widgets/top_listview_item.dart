@@ -13,7 +13,7 @@ class TopListViewItem extends StatelessWidget {
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(
           Radius.circular(
-            15,
+            10,
           ),
         ),
         image: DecorationImage(
