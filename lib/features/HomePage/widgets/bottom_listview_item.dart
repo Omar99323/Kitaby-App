@@ -15,7 +15,7 @@ class BottomListViewItem extends StatelessWidget {
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(
               Radius.circular(
-                10,
+                5,
               ),
             ),
             image: DecorationImage(
@@ -27,34 +27,72 @@ class BottomListViewItem extends StatelessWidget {
           ),
         ),
         SizedBox(
-          width: MediaQuery.of(context).size.width * 0.08,
+          width: MediaQuery.of(context).size.width * 0.1,
         ),
-        Column(
-          children: [
-            const Text(
-              'sssssssssss',
-              style: Styles.textStyle30,
-            ),
-            const Text(
-              'sssssssssss',
-              style: Styles.textStyle18,
-            ),
-            Row(
-              children: const [
-                Text(
-                  '525',
-                  style: Styles.textStyle14,
+        SizedBox(
+          width: MediaQuery.of(context).size.width * 0.45,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: Text(
+                  'The Jungle Book',
+                  style: Styles.textStyle20.copyWith(
+                    fontFamily: 'GT Sectra Fine',
+                  ),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                SizedBox(
-                  width: 20,
+              ),
+              const SizedBox(
+                height: 3,
+              ),
+              Text(
+                'Rudyard Kipling',
+                style: Styles.textStyle14.copyWith(
+                  color: Colors.grey,
                 ),
-                Text(
-                  '40',
-                  style: Styles.textStyle14,
-                ),
-              ],
-            ),
-          ],
+              ),
+              const SizedBox(
+                height: 3,
+              ),
+              Row(
+                children: [
+                  Text(
+                    r'19.99 $',
+                    style: Styles.textStyle20.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Spacer(),
+                  Icon(
+                    Icons.star,
+                    size: 18,
+                    color: Colors.yellow[300],
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    '4.8',
+                    style: Styles.textStyle16.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    '(2390)',
+                    style: Styles.textStyle14.copyWith(
+                      color: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ],
     );

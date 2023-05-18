@@ -10,7 +10,7 @@ class HomePageBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 25,
+        horizontal: 30,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
