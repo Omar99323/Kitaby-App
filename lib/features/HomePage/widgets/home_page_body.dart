@@ -13,15 +13,24 @@ class HomePageBody extends StatelessWidget {
         horizontal: 30,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          CustomAppBar(),
-          TopListView(),
-          Text(
-            'Best Seller',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+        children: [
+          const CustomAppBar(),
+          Expanded(
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  TopListView(),
+                  Text(
+                    'Best Seller',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                  ),
+                  BottomListView(),
+                ],
+              ),
+            ),
           ),
-          BottomListView(),
         ],
       ),
     );

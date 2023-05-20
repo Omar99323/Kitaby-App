@@ -6,9 +6,13 @@ class BottomListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return Padding(
+      padding: const EdgeInsets.only(
+        bottom: 30,
+      ),
       child: ListView.separated(
-        physics: const BouncingScrollPhysics(),
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
           return const BottomListViewItem();
         },
@@ -17,7 +21,7 @@ class BottomListView extends StatelessWidget {
             height: MediaQuery.of(context).size.height * .02,
           );
         },
-        itemCount: 6,
+        itemCount: 10,
       ),
     );
   }
