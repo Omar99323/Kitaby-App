@@ -3,6 +3,7 @@ import 'package:kitaby/features/HomePage/widgets/home_page_body.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+  static const id = 'HomePage';
 
   @override
   Widget build(BuildContext context) {

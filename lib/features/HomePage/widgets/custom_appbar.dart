@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/core/constants.dart';
-import 'package:get/get.dart';
+import 'package:kitaby/core/methods/navigator_method.dart';
 import 'package:kitaby/features/SearchPage/search_page.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              Get.to(() => const SearchPage());
+              navMethod(context, SearchPage.id);
             },
             icon: const Icon(
               Icons.search,

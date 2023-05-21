@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:kitaby/core/constants.dart';
 import 'package:kitaby/features/HomePage/home_page.dart';
 import 'package:kitaby/features/SplashPage/widgets/sliding_text.dart';
@@ -34,9 +33,10 @@ class _SplashPageBodyState extends State<SplashPageBody>
 
   void navigateToHome() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(
-        () => const HomePage(),
-        transition: Transition.circularReveal,
+      Navigator.pushNamedAndRemoveUntil(
+        context,
+        HomePage.id,
+        (route) => true,
       );
     });
   }
