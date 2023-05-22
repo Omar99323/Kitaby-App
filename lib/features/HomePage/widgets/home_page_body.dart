@@ -12,26 +12,29 @@ class HomePageBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
         horizontal: 30,
       ),
-      child: Column(
-        children: [
-          const CustomHomeAppBar(),
-          Expanded(
-            child: SingleChildScrollView(
-              physics: const BouncingScrollPhysics(),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  TopListView(),
-                  Text(
-                    'Best Seller',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                  BottomListView(),
-                ],
+      child: SafeArea(
+        child: Column(
+          children: [
+            const CustomHomeAppBar(),
+            Expanded(
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    TopListView(),
+                    Text(
+                      'Best Seller',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                    ),
+                    BottomListView(),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

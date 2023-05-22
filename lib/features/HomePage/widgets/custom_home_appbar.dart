@@ -10,28 +10,23 @@ class CustomHomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        top: 30,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Image.asset(
-            logo,
-            height: 20,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Image.asset(
+          logo,
+          height: 20,
+        ),
+        IconButton(
+          onPressed: () {
+            navMethod(context, SearchPage.id);
+          },
+          icon: const Icon(
+            Icons.search,
+            size: 35,
           ),
-          IconButton(
-            onPressed: () {
-              navMethod(context, SearchPage.id);
-            },
-            icon: const Icon(
-              Icons.search,
-              size: 35,
-            ),
-          )
-        ],
-      ),
+        )
+      ],
     );
   }
 }
