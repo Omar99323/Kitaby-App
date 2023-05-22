@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitaby/features/HomePage/widgets/custom_appbar.dart';
+import 'package:kitaby/features/HomePage/widgets/custom_home_appbar.dart';
 import 'package:kitaby/features/HomePage/widgets/top_listview.dart';
 import 'package:kitaby/features/HomePage/widgets/bottom_listview.dart';
 
@@ -14,7 +14,7 @@ class HomePageBody extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const CustomAppBar(),
+          const CustomHomeAppBar(),
           Expanded(
             child: SingleChildScrollView(
               physics: const BouncingScrollPhysics(),
