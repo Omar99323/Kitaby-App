@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kitaby/core/utils/styls.dart';
 import 'package:kitaby/features/HomePage/widgets/custom_book_details_appbar.dart';
 import 'package:kitaby/features/HomePage/widgets/cusrom_book_image.dart';
+import 'package:kitaby/core/widgets/custom_button.dart';
 
 class BookDetailsPageBody extends StatelessWidget {
   const BookDetailsPageBody({super.key});
@@ -29,6 +30,7 @@ class BookDetailsPageBody extends StatelessWidget {
               'Rudyard Kipling',
               style: Styles.textStyle18.copyWith(
                 color: Colors.white70,
+                fontStyle: FontStyle.italic,
               ),
             ),
             const SizedBox(
@@ -59,6 +61,26 @@ class BookDetailsPageBody extends StatelessWidget {
                   style: Styles.textStyle14.copyWith(
                     color: Colors.white70,
                   ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Row(
+              children: const [
+                CustomBookButton(
+                  text: '19.99 €',
+                  fontsize: 20,
+                  edgetopLeft: 15,
+                  edgebottomLeft: 15,
+                ),
+                CustomBookButton(
+                  text: 'Free preview',
+                  color: Color(0xffef8262),
+                  textcolor: Colors.white,
+                  edgebottomRight: 15,
+                  edgetopRight: 15,
                 ),
               ],
             ),

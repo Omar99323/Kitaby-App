@@ -36,7 +36,7 @@ class _SplashPageBodyState extends State<SplashPageBody>
       Navigator.pushNamedAndRemoveUntil(
         context,
         HomePage.id,
-        (route) => true,
+        (route) => false,
       );
     });
   }

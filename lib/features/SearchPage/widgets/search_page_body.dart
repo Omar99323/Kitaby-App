@@ -5,6 +5,22 @@ class SearchPageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 30,
+      ),
+      child: SafeArea(
+        child: Column(
+          children: [
+            IconButton(
+              onPressed: () => Navigator.pop(context),
+              icon: const Icon(
+                Icons.close,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
