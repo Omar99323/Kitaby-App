@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/core/utils/styls.dart';
+import 'package:kitaby/features/HomePage/widgets/book_details_page_listview.dart';
 import 'package:kitaby/features/HomePage/widgets/custom_book_details_appbar.dart';
-import 'package:kitaby/features/HomePage/widgets/cusrom_book_image.dart';
+import 'package:kitaby/features/HomePage/widgets/custom_book_image.dart';
 import 'package:kitaby/core/widgets/custom_button.dart';
 
 class BookDetailsPageBody extends StatelessWidget {
@@ -15,7 +16,6 @@ class BookDetailsPageBody extends StatelessWidget {
       ),
       child: SafeArea(
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CustomBookDetailsAppBar(),
             const CustomBookImage(),
@@ -83,6 +83,22 @@ class BookDetailsPageBody extends StatelessWidget {
                   edgetopRight: 15,
                 ),
               ],
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.05,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'You can also like',
+                style: Styles.textStyle14.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            const BookDetailsListView(),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.05,
             ),
           ],
         ),
