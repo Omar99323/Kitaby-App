@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kitaby/features/SearchPage/widgets/search_listview.dart';
+import 'package:kitaby/features/SearchPage/widgets/search_text_field.dart';
 
 class SearchPageBody extends StatelessWidget {
   const SearchPageBody({super.key});
@@ -11,6 +13,7 @@ class SearchPageBody extends StatelessWidget {
       ),
       child: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             IconButton(
               onPressed: () => Navigator.pop(context),
@@ -18,6 +21,11 @@ class SearchPageBody extends StatelessWidget {
                 Icons.close,
               ),
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            const SearchTextField(),
+            const SearchListView(),
           ],
         ),
       ),
