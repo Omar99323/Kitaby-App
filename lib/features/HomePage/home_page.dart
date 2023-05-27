@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitaby/features/HomePage/widgets/home_page_body.dart';
+import 'package:kitaby/Features/HomePage/widgets/home_page_body.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

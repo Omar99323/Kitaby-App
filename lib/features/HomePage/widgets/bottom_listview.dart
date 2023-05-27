@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitaby/features/HomePage/widgets/bottom_listview_item.dart';
+import 'package:kitaby/Features/HomePage/widgets/bottom_listview_item.dart';
 
 class BottomListView extends StatelessWidget {
   const BottomListView({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitaby/features/HomePage/widgets/book_details_listview_item.dart';
+import 'package:kitaby/Features/HomePage/widgets/book_details_listview_item.dart';
 
 class BookDetailsListView extends StatelessWidget {
   const BookDetailsListView({super.key});

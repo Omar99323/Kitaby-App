@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kitaby/features/SearchPage/widgets/search_listview.dart';
-import 'package:kitaby/features/SearchPage/widgets/search_text_field.dart';
+import 'package:kitaby/Features/SearchPage/widgets/search_listview.dart';
+import 'package:kitaby/Features/SearchPage/widgets/search_text_field.dart';
 
 class SearchPageBody extends StatelessWidget {
   const SearchPageBody({super.key});

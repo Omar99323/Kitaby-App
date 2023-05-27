@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kitaby/core/constants.dart';
-import 'package:kitaby/features/HomePage/book_details_page.dart';
-import 'package:kitaby/features/HomePage/home_page.dart';
-import 'package:kitaby/features/SearchPage/search_page.dart';
-import 'package:kitaby/features/SplashPage/splash_page.dart';
+import 'package:kitaby/Core/constants.dart';
+import 'package:kitaby/Features/HomePage/book_details_page.dart';
+import 'package:kitaby/Features/HomePage/home_page.dart';
+import 'package:kitaby/Features/SearchPage/search_page.dart';
+import 'package:kitaby/Features/SplashPage/splash_page.dart';
 
 void main() {
   runApp(const KitabyApp());

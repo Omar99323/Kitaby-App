@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/core/constants.dart';
-import 'package:kitaby/features/HomePage/home_page.dart';
-import 'package:kitaby/features/SplashPage/widgets/sliding_text.dart';
+import 'package:kitaby/Features/HomePage/home_page.dart';
+import 'package:kitaby/Features/SplashPage/widgets/sliding_text.dart';
 
 class SplashPageBody extends StatefulWidget {
   const SplashPageBody({super.key});

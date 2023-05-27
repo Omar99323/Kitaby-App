@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/core/utils/styls.dart';
-import 'package:kitaby/features/HomePage/widgets/book_details_page_listview.dart';
-import 'package:kitaby/features/HomePage/widgets/custom_book_details_appbar.dart';
-import 'package:kitaby/features/HomePage/widgets/custom_book_image.dart';
+import 'package:kitaby/Features/HomePage/widgets/book_details_page_listview.dart';
+import 'package:kitaby/Features/HomePage/widgets/custom_book_details_appbar.dart';
+import 'package:kitaby/Features/HomePage/widgets/custom_book_image.dart';
 import 'package:kitaby/core/widgets/custom_button.dart';
 
 class BookDetailsPageBody extends StatelessWidget {
