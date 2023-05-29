@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitaby/core/constants.dart';
-import 'package:kitaby/core/methods/navigator_method.dart';
+import 'package:kitaby/Core/utils/methods/navigator_method.dart';
 import 'package:kitaby/Features/HomePage/book_details_page.dart';
 
 class TopListViewItem extends StatelessWidget {
